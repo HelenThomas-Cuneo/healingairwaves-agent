@@ -8,7 +8,7 @@ app = FastAPI()
 def form_ui():
     return """
     <html>
-        <head><title>HealingAirwaves Agent</title></head>
+        <head><title>HealingAirwaves Generator</title></head>
         <body>
             <h2>🎙️ HealingAirwaves Generator</h2>
             <form action="/generate" method="post">
@@ -21,7 +21,7 @@ def form_ui():
                     <option value="ar">Arabic</option>
                 </select><br>
                 <input name="email" type="email" placeholder="Send to email (optional)"><br>
-                <button name="type" value="voiceover">Generate Voiceover</button>
+                <button type="submit" name="type" value="voiceover">Generate Voiceover</button>
             </form>
         </body>
     </html>
